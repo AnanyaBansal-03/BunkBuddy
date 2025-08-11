@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BunkBuddy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="text-white">
+
+  <div class="absolute bottom-0 right-0 p-4">
+        <img src="robot2.png" 
+             class="h-[350px] sm:h-[400px] md:h-[450px] lg:h-[550px] xl:h-[650px] transition-all duration-500 
+              drop-shadow-[0_0_15px_rgba(59,130,246,0.8)] 
+              hover:drop-shadow-[0_0_35px_rgba(59,130,246,1)]">
+    </div>
+
+  <!-- Fixed Hero Background -->
+  <div class="fixed inset-0 -z-10">
+    <div class="h-screen bg-cover bg-center parallax" style="background-image: url('Frontend\Images\bgnew.jpg')">
+      <div class="absolute inset-0 bg-black/50 backdrop-blur-xs"></div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="absolute top-4 left-0 w-full z-50 flex items-center justify-between px-6">
+    <!-- Logo -->
+    <div class="text-3xl font-bold ml-10">BunkBuddy</div>
+
+    <!-- Separate glassy buttons -->
+    <nav class="hidden md:flex space-x-4 font-medium bg-black bg-opcaity-50">
+      <a href="#attendance" class="backdrop-blur-md bg-white/10 border border-white/20 rounded-full px-4 py-2 hover:bg-blue-500/20 text-blue-300 transition">
+        Attendance Requirement
+      </a>
+      <a href="#cgpa" class="backdrop-blur-md bg-white/10 border border-white/20 rounded-full px-4 py-2 hover:bg-blue-500/20 text-blue-300 transition">
+        CGPA Calculator
+      </a>
+      <a href="#timetable" class="backdrop-blur-md bg-white/10 border border-white/20 rounded-full px-4 py-2 hover:bg-blue-500/20 text-blue-300 transition">
+        Timetable Tracker
+      </a>
+      <button class="backdrop-blur-md bg-white/10 border border-white/30 rounded-full px-4 py-2 hover:bg-blue-500/20 text-blue-300 transition">
+        Sign In
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero Content -->
+  <div class="ml-[10em]">
+    <section class="relative h-screen flex items-center px-10">
+    <div class="max-w-lg z-10">
+      <h1 class="text-6xl font-extrabold leading-tight mb-4">
+      AI-Powered 
+<div class="flex gap-4">
+  <span class="text-blue-400">
+  Academic
+</span> 
+Assistant
+</div>
+
+      </h1>
+      <p class="text-lg text-gray-200 mb-6 max-w-[500px]">
+        Calculate your attendance requirement, track your timetable, and monitor your CGPA with smart academic tools.
+      </p>
+      <button class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-lg shadow-lg">
+        Get Started
+      </button>
+    </div>
+  </section>
+  </div>
+
+
+
+  <div id="cursor-glow" class="pointer-events-none fixed top-0 left-0 w-24 h-24 rounded-full bg-blue-400 opacity-70 blur-3xl mix-blend-screen z-50"></div>
+    <script>
+        const glow = document.getElementById("cursor-glow");
+        document.addEventListener("mousemove", (e) => {
+        glow.style.transform = `translate(${e.clientX - 48}px, ${e.clientY - 48}px)`; 
+        });
+    </script>
+
+    
+</body>
+</html>
