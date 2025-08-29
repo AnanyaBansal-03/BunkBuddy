@@ -9,7 +9,7 @@
 <body class="text-white">
 
   <div class="absolute bottom-0 right-0 p-4">
-        <img src="robot2.png" 
+        <img src="./Images/robot2.png" 
              class="h-[350px] sm:h-[400px] md:h-[450px] lg:h-[550px] xl:h-[650px] transition-all duration-500 
               drop-shadow-[0_0_15px_rgba(59,130,246,0.8)] 
               hover:drop-shadow-[0_0_35px_rgba(59,130,246,1)]">
@@ -17,7 +17,7 @@
 
   <!-- Fixed Hero Background -->
   <div class="fixed inset-0 -z-10">
-    <div class="h-screen bg-cover bg-center parallax" style="background-image: url('Frontend\Images\bgnew.jpg')">
+    <div class="h-screen bg-cover bg-center parallax" style="background-image: url('./Images/bgnew.jpg')">
       <div class="absolute inset-0 bg-black/50 backdrop-blur-xs"></div>
     </div>
   </div>
@@ -39,7 +39,7 @@
         Timetable Tracker
       </a>
       <button class="backdrop-blur-md bg-white/10 border border-white/30 rounded-full px-4 py-2 hover:bg-blue-500/20 text-blue-300 transition">
-        Sign In
+        Login
       </button>
     </nav>
   </header>
@@ -67,17 +67,156 @@ Assistant
     </div>
   </section>
   </div>
+   <section class="relative z-10 m-0 p-0 bg-white text-gray-900 w-full">
+    <div class="w-full flex flex-col justify-center items-center py-12">
+      <div class="w-full px-4 md:px-8 max-w-6xl">
 
+        <!-- Main Heading -->
+        <div class="text-center mb-12">
+          <h2 class="text-5xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-600 via-blue-500 to-purple-600">
+            Welcome to Acadence
+          </h2>
+          <p class="text-xl text-gray-600 font-medium max-w-3xl mx-auto">
+            Your intelligent academic companion designed to make learning and teaching smarter, easier, and more efficient.
+          </p>
+        </div>
 
+        <!-- Students Section -->
+        <div class="mb-20">
+          <div class="text-center mb-10">
+            <span class="inline-block px-4 py-1 text-sm font-semibold text-green-600 bg-green-100 rounded-full mb-3">
+              FOR STUDENTS
+            </span>
+            <h3 class="text-3xl font-bold text-gray-800">
+              Smarter Learning <span class="text-green-600">Made Simple</span>
+            </h3>
+            <div class="w-24 h-1 bg-gradient-to-r from-green-400 to-teal-500 mx-auto mt-4 rounded-full"></div>
+          </div>
 
-  <div id="cursor-glow" class="pointer-events-none fixed top-0 left-0 w-24 h-24 rounded-full bg-blue-400 opacity-70 blur-3xl mix-blend-screen z-50"></div>
-    <script>
-        const glow = document.getElementById("cursor-glow");
-        document.addEventListener("mousemove", (e) => {
-        glow.style.transform = `translate(${e.clientX - 48}px, ${e.clientY - 48}px)`; 
-        });
-    </script>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-green-100">
+              <h4 class="text-lg font-bold text-gray-800 mb-2">Real-Time Alerts</h4>
+              <p class="text-gray-600">Stay updated on attendance, timetable changes, and important academic events.</p>
+            </div>
+            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-green-100">
+              <h4 class="text-lg font-bold text-gray-800 mb-2">CGPA Calculator</h4>
+              <p class="text-gray-600">Track your grades and instantly calculate your semester and cumulative GPA.</p>
+            </div>
+            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-green-100">
+              <h4 class="text-lg font-bold text-gray-800 mb-2">Timetable Manager</h4>
+              <p class="text-gray-600">Organize your daily classes and study schedule in one easy view.</p>
+            </div>
+            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-green-100">
+              <h4 class="text-lg font-bold text-gray-800 mb-2">Attendance Planner</h4>
+              <p class="text-gray-600">Know exactly how many classes you need to attend to meet attendance goals.</p>
+            </div>
+            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-green-100">
+              <h4 class="text-lg font-bold text-gray-800 mb-2">Study Resources</h4>
+              <p class="text-gray-600">Access curated notes, assignments, and reference material in one place.</p>
+            </div>
+            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-green-100">
+              <h4 class="text-lg font-bold text-gray-800 mb-2">AI Help Desk</h4>
+              <p class="text-gray-600">Get instant answers to course-related questions with Acadence AI.</p>
+            </div>
+          </div>
+        </div>
 
+        <!-- Teachers Section -->
+        <div>
+          <div class="text-center mb-10">
+            <span class="inline-block px-4 py-1 text-sm font-semibold text-blue-600 bg-blue-100 rounded-full mb-3">
+              FOR TEACHERS
+            </span>
+            <h3 class="text-3xl font-bold text-gray-800">
+              Teaching <span class="text-blue-600">Reimagined</span>
+            </h3>
+            <div class="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto mt-4 rounded-full"></div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-blue-100">
+              <h4 class="text-lg font-bold text-gray-800 mb-2">QR Attendance</h4>
+              <p class="text-gray-600">Mark attendance instantly with secure, scannable QR codes.</p>
+            </div>
+            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-blue-100">
+              <h4 class="text-lg font-bold text-gray-800 mb-2">Student Progress Reports</h4>
+              <p class="text-gray-600">Get detailed insights into individual and class performance.</p>
+            </div>
+            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-blue-100">
+              <h4 class="text-lg font-bold text-gray-800 mb-2">Proxy Prevention</h4>
+              <p class="text-gray-600">Stop fake attendance with Wi-Fi based authentication.</p>
+            </div>
+            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-blue-100">
+              <h4 class="text-lg font-bold text-gray-800 mb-2">Performance Analytics</h4>
+              <p class="text-gray-600">Track academic trends and identify students who need help.</p>
+            </div>
+            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-blue-100">
+              <h4 class="text-lg font-bold text-gray-800 mb-2">Resource Sharing</h4>
+              <p class="text-gray-600">Easily share assignments, notes, and announcements.</p>
+            </div>
+            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-blue-100">
+              <h4 class="text-lg font-bold text-gray-800 mb-2">Smart Scheduling</h4>
+              <p class="text-gray-600">Plan lessons and assessments efficiently with AI suggestions.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </section> <!-- White section khatam yahin hota hai -->
+
+  <!-- Footer -->
+  <footer class="relative z-10 bg-gray-900 text-gray-300 py-12">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
+
+      <!-- Brand / About -->
+      <div>
+        <h2 class="text-2xl font-bold text-white mb-4">BunkBuddy</h2>
+        <p class="text-gray-400 text-sm leading-relaxed">
+          Your AI-powered academic assistant to simplify learning and teaching.
+          Smarter tools for students and teachers at one place.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-lg font-semibold text-white ml-10 mb-4">Quick Links</h3>
+        <ul class="space-y-3">
+          <li><a href="#attendance" class="hover:text-blue-400 transition ml-10">Attendance Requirement</a></li>
+          <li><a href="#cgpa" class="hover:text-blue-400 transition ml-10">CGPA Calculator</a></li>
+          <li><a href="#timetable" class="hover:text-blue-400 transition ml-10">Timetable Tracker</a></li>
+          <li><a href="#" class="hover:text-blue-400 transition ml-10">Sign In</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h3 class="text-lg font-semibold text-white mb-4">Get in Touch</h3>
+        <p class="text-gray-400 text-sm mb-2">Email: support@bunkbuddy.com</p>
+        <p class="text-gray-400 text-sm">Phone: +91 98765 43210</p>
+      </div>
+    </div>
+
+    <!-- Bottom Note -->
+    <div class="mt-10 pt-6 text-center text-gray-500 text-sm">
+      © 2025 BunkBuddy. All rights reserved.
+    </div>
+  </footer>
+<script>
+  const glow = document.getElementById("cursor-glow");
+  const footer = document.querySelector("footer");
+
+  document.addEventListener("mousemove", (e) => {
+    const footerRect = footer.getBoundingClientRect(); 
+    const footerTop = footerRect.top; // viewport ke hisaab se footer ka start
     
+    if (e.clientY >= footerTop) {
+      glow.style.opacity = 0; // Footer ke andar → glow gayab
+    } else {
+      glow.style.opacity = 0.7; // Normal glow
+      glow.style.transform = `translate(${e.clientX - 48}px, ${e.clientY - 48}px)`;
+    }
+  });
+</script>
 </body>
 </html>
