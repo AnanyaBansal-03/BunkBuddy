@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="h-screen">
+        <div class="p-4 flex justify-between border-b border-gray-300" id="navbar">
+            <!-- <div class="flex gap-2">
+                <img src="assets/logo.png" alt="logo" class="w-10 h-10 rounded-full">
+                <p class="text-blue-700 text-2xl font-bold">Admin Dashboard</p>
+            </div>
+            <div class="relative">
+                <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-gray-500"></i>
+                <input type="text" placeholder="Search" class="w-full rounded-3xl p-2 border-gray-500 border pl-10">
+            </div>
+            <div class="flex gap-4">
+                <i class="fa-solid fa-bell text-xl "></i>
+                <img src="assets/admin.png" alt="profile" class="w-8 h-8 rounded-full">
+            </div> -->
+            <div class="flex gap-2">
+                <img src="assets/admin.png" alt="logo" class="w-8 h-8 rounded-full">
+                <p class="bg-gradient-to-r from-blue-700 to-purple-700 bg-clip-text text-transparent text-2xl font-bold">Admin Dashboard</p>
+            </div>
+            <div class="flex gap-4">
+                <button class="bg-gradient-to-r from-blue-700 to-purple-700 text-white rounded-lg p-1 px-2" onclick="changeMode()">
+                    <div id="mode-name" class="flex gap-2 font-bold">
+                        <img src="assets/MoonImage.png" alt="" class="w-6 h-6">
+                        <p>Dark Mode</p>
+                    </div>
+                </button>
+                <img src="assets/adminLogo.png" alt="profile" class="w-10 h-10 rounded-full border border-black">
+            </div>
+        </div>
+        <div class="flex">
+            <div class="w-1/5 border-r border-gray-300 h-screen flex flex-col items-start gap-8 p-4 text-black font-bold" id="sidebar">
+                <button class="flex gap-2" onclick="dashboard()"><i class="fa-solid fa-chart-line"></i>Dashboard</button>
+                <button class="flex gap-2" onclick="manageUsers()"><i class="fa-solid fa-users"></i>Manage Users</button>
+                <button class="flex gap-2" onclick="calculateReports()"><i class="fa-solid fa-chart-line"></i>Calculate Reports</button>
+                <button class="flex gap-2" onclick="attendanceTracker()"><i class="fa-solid fa-calendar-check"></i>Attendance Tracker</button>
+                <button class="flex gap-2" onclick="notifications()"><i class="fa-solid fa-bell"></i>Notifications</button>
+                <button class="flex gap-2" onclick="manageSubjects()"><i class="fa-solid fa-book"></i>Manage Subjects</button>
+                <button class="flex gap-2" onclick="manageGroups()"><i class="fa-solid fa-people-group"></i>Manage Groups</button>
+                <button class="flex gap-2" onclick="manageTimetable()"><i class="fa-solid fa-clock"></i>Manage Timetable</button>
+            </div>
+            <div class="w-4/5 h-screen flex flex-col items-center justify-center p-4 gap-8" id="main-content">
+                <div>
+                    <div class="flex gap-2 text-5xl font-bold">
+                        <p>Welcome back,</p>
+                        <p class="bg-gradient-to-r from-blue-700 to-purple-700 bg-clip-text text-transparent">Admin!</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <p>Manage users, subjects, attendance, timetables, and reports all from one place.</p>
+                        <p>Stay in control and keep everything organized.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <div class="shadow-2xl rounded-xl p-4 flex flex-col items-center border border-blue-700">
+                        <img src="assets/ExamImage.png" alt="" class="h-10 w-10 rounded-lg">
+                        <p class="text-lg font-bold">Upcoming Exams</p>
+                        <p>Stay updated with scheduled exams and important test dates</p>
+                    </div>
+                    <div class="shadow-2xl rounded-xl p-4 flex flex-col items-center border border-blue-700">
+                        <img src="assets/EventImage.png" alt="" class="h-10 w-10 rounded-lg">
+                        <p class="text-lg font-bold">Upcoming Events</p>
+                        <p>Keep track of upcoming seminars, workshops, and campus events</p>
+                    </div>
+                    <div class="shadow-2xl rounded-xl p-4 flex flex-col items-center border border-blue-700">
+                        <img src="assets/RecentActivityImage.png" alt="" class="h-10 w-10 rounded-lg">
+                        <p class="text-lg font-bold">Recent Activity</p>
+                        <p>A quick glance at your latest actions and updates on the platform</p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <script src="AdminDashboard.js"></script>
+</body>
+</html>
